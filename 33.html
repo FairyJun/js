@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While循环</title>
+    <script>
+        //1、打印1-100岁
+        var i = 1;
+        while(i <= 100){
+            console.log('今年'+ i + '岁');
+            i++;
+        }
+
+        //2、计算1-100之间整数和
+        var j = 1;
+        var sum = 0;
+        while(j <= 100){
+            sum += j;
+            j++;
+        }
+        console.log(sum);
+
+        //3、弹出提示框
+        var message = prompt('我美吗？');
+        while(message != '美'){
+            message = prompt('我美吗？');
+        }
+        alert('你也美');
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

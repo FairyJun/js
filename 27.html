@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If分支语句</title>
+    <script>
+        // 1. 语法结构  if 如果  else 否则
+        // if (条件表达式) {
+        //     // 执行语句1
+        // } else {
+        //     // 执行语句2 
+        // }
+        // 2. 执行思路 如果表达式结果为真 那么执行语句1  否则  执行语句2
+        // 3. 代码验证
+        var age = prompt('请输入您的年龄:');
+        if (age >= 18) {
+            alert('可以去网吧');
+        } else {
+            alert('好好学习，天天向上');
+        }
+        // 5. if里面的语句1 和 else 里面的语句2 最终只能有一个语句执行  2选1
+        // 6.  else 后面直接跟大括号
+
+         //  伪代码       按照从大到小判断的思路
+        // 弹出prompt输入框，让用户输入分数（score），把这个值取过来保存到变量中
+        // 使用多分支 if else if 语句来分别判断输出不同的值
+        var score = prompt('请您输入分数:');
+        if (score >= 90) {
+            alert('真棒');
+        } else if (score >= 80) {
+            alert('不错');
+        } else if (score >= 70) {
+            alert('继续加油喽');
+        } else if (score >= 60) {
+            alert('你很危险');
+        } else {
+            alert('熊孩子，我不想和你说话，我只想用鞭子和你说话');
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
