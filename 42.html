@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>翻转数组</title>
+    <script>
+        // 将数组 ['red', 'green', 'blue', 'pink', 'purple'] 的内容反过来存放
+        // 1、声明一个新数组 newArr
+        // 2、把旧数组索引号第4个取过来（arr.length - 1)，给新数组索引号第0个元素 (newArr.length)
+        // 3、我们采取 递减的方式  i--
+        var arr = ['red', 'green', 'blue', 'pink', 'purple', 'hotpink'];
+        var newArr = [];
+        for (var i = arr.length - 1; i >= 0; i--) {
+            newArr[newArr.length] = arr[i]
+        }
+        console.log(newArr);
+
+        // 交换两个变量
+        var num1 = 'pink';
+        var num2 = 'yellow';
+        var temp;
+        temp = num1;
+        num1 = num2;
+        num2 = temp;
+        console.log(num1, num2);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>存放1-10个值</title>
+    <script>
+        // 新建一个数组，里面存放10个整数（ 1~10）
+        // 核心原理：使用循环来追加数组。
+        // 1、声明一个空数组 arr。
+        // 2、循环中的计数器 i  可以作为数组元素存入。
+        // 3、由于数组的索引号是从0开始的， 因此计数器从 0 开始更合适，存入的数组元素要+1。
+        var arr = [];
+        for (var i = 0; i < 100; i++) {
+            // arr = i; 不要直接给数组名赋值 否则以前的元素都没了
+            arr[i] = i + 1;
+        }
+        console.log(arr);
+
+        // 将数组 [2, 0, 6, 1, 77, 0, 52, 0, 25, 7] 中大于等于 10 的元素选出来，放入新数组。
+        // 1、声明一个新的数组用于存放新数据newArr。
+        // 2、遍历原来的旧数组， 找出大于等于 10 的元素。
+        // 3、依次追加给新数组 newArr。
+        // 方法1
+        var arr = [2, 0, 6, 1, 77, 0, 52, 0, 25, 7];
+        var newArr = [];
+        var j = 0;
+        for (var i = 0; i < arr.length; i++) {
+            if (arr[i] >= 10) {
+                // 新数组索引号应该从0开始 依次递增
+                newArr[j] = arr[i];
+                j++;
+            }
+        }
+        console.log(newArr);
+        // 方法2 
+        var arr = [2, 0, 6, 1, 77, 0, 52, 0, 25, 7];
+        var newArr = [];
+        // 刚开始 newArr.length 就是 0
+        for (var i = 0; i < arr.length; i++) {
+            if (arr[i] >= 10) {
+                // 新数组索引号应该从0开始 依次递增
+                newArr[newArr.length] = arr[i];
+            }
+        }
+        console.log(newArr);
+
+         // 将数组[2, 0, 6, 1, 77, 0, 52, 0, 25, 7]中的 0 去掉后，形成一个不包含 0 的新数组。
+        // 1、需要一个新数组用于存放筛选之后的数据。
+        // 2、遍历原来的数组， 把不是 0 的数据添加到新数组里面(此时要注意采用数组名 + 索引的格式接收数据)。
+        // 3、新数组里面的个数， 用 length 不断累加。
+        var arr = [2, 0, 6, 1, 77, 0, 52, 0, 25, 7];
+        var newArr = [];
+        for (var i = 0; i < arr.length; i++) {
+            if (arr[i] != 0) {
+                newArr[newArr.length] = arr[i];
+            }
+        }
+        console.log(newArr);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

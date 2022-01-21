@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数组最大值</title>
+    <script>
+        // 求数组[2,6,1,77,52,25,7]中的最大值
+        // 声明一个保存最大元素的变量 max。
+        // 默认最大值可以取数组中的第一个元素。
+        // 遍历这个数组，把里面每个数组元素和 max 相比较。
+        // 如果这个数组元素大于max 就把这个数组元素存到 max 里面，否则继续下一轮比较。
+        // 最后输出这个 max
+        var arr = [2, 6, 1, 77, 52, 25, 7, 99];
+        var max = arr[0];
+        for (var i = 1; i < arr.length; i++) {
+            if (arr[i] > max) {
+                max = arr[i];
+            }
+        }
+        console.log('该数组里面的最大值是：' + max);
+
+        // 将数组 ['red', 'green', 'blue', 'pink'] 转换为字符串，并且用 | 或其他符号分割
+        // 1.需要一个新变量用于存放转换完的字符串 str。
+        // 2.遍历原来的数组，分别把里面数据取出来，加到字符串里面。
+        // 3.同时在后面多加一个分隔符
+        var arr = ['red', 'green', 'blue', 'pink'];
+        var str = '';
+        var sep = '*';
+        for (var i = 0; i < arr.length; i++) {
+            str += arr[i] + sep;
+        }
+        console.log(str);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
